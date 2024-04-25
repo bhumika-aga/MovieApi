@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import MyCarousel from '../carousel/MyCarousel';
 
 const Home = ({movies}) => {
   return (
-    <div>Welcome!</div>
+    <MyCarousel movies={movies} />
   )
 }
 
-export default Home
+export default Home;
