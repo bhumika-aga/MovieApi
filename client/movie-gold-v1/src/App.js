@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import api from './api/axiosConfig';
 import Layout from './components/Layout';
+import Header from './components/header/Header';
 import Home from './components/home/Home';
 import NotFound from './components/notFound/NotFound';
 import Reviews from './components/reviews/Reviews';
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' element={<Home movies={movies} />}></Route>
